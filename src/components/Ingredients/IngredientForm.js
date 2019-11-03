@@ -9,7 +9,10 @@ const IngredientForm = memo(props => {
 
   const submitHandler = event => {
     event.preventDefault();
-    // ...
+    props.OnAddIngredient({
+      title,
+      amount
+    })
   };
 
   return (
